@@ -4,47 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Tippy</title>
-    <!--Import Materialize-->
-    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Gettin' Tippy Widdit</title>
+   
     <!--CSS link-->
     <link rel = "stylesheet" type = "text/css" href = "assets/tip.css">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!--Vanilla JS link-->
+    <script src = "assets/tip.js"></script>
     <!--jQuery-->
    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 </head>
 <body>
 <div class = "container">
+    <!--Header-->
     <div class = "row">
         <div class = "col l12">
-           <h1 id = "tippy">Tippy</h1>
+           <h1 id = "tippy">Gettin' Tippy Widdit</h1>
         </div>
     </div>
     <div class = "row">
-        <div class = "offset-l4 col l4 offset-l4">
-            <div id = "calculator">
-                <!--Display-->
-                <span id = "number-display">
-                  
-                </span>
-                <!--Numbers-->
-                <button class = "number data-number 1">1</button>
-                <button class = "number data-number 2">2</button>
-                <button class = "number data-number 3">3</button>
-                <button class = "number data-number 4">4</button>
-                <button class = "number data-number 5">5</button>
-                <button class = "number data-number 6">6</button>
-                <button class = "number data-number 7">7</button>
-                <button class = "number data-number 8">8</button>
-                <button class = "number data-number 9">9</button>
-                <button class = "number data-number 0">0</button>
-                <!--Symbols-->
-                <button id = "add">+</button>
-                <button id = "subtract">-</button>
-                <button id = "multiply">x</button>
-                <button id = "divide">&#247</button>
-                <button id = "equal">=</button>
+        <form class = "col l4">
+            <input id = "bill-input" placeholder = "How much was your bill?">
+                <!--The Bill Amount Before Tax Will Be Input Here-->
+            </input>
+            <br>
+            <input id = "tip-input" placeholder = "How much would you like to tip?">
+            <!--The Bill Amount Before Tax Will Be Input Here-->
+            </input>
+            <!--Submit button here-->
+            <button data-target="modal1" class="btn modal-trigger" id = "submit">Submit</button>
+        </form>
+        <div class = "offset-l4 col l4">
+            <div id = "tip-display">
+                <h6>This Is The Tip Amount:</h6>
+                <!--The Amount of Tip Will Display Here-->
+            </div>
+            <div id = "total-display">
+                <h6>This Is Your Total Bill:</h6>
+                <!--The Total Bill Amount Will Display Here-->
             </div>
         </div>
     </div>
