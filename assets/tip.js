@@ -10,6 +10,11 @@ let splitTip;
 //get input from form and store data in corresponding variables
 $("#submit").on("click" ,function(){
     event.preventDefault();
+    //handle invalid entries
+    //conditional for if any of the entries are 0
+        //then exit the loop and pop up a message
+    //if any of the entries contain a - symbol,
+        //then exit the loop and pop up a message
     //empty display divs each click
     $("#tip-display").empty();
     $("#total-display").empty();
@@ -38,9 +43,4 @@ $("#submit").on("click" ,function(){
         $("#split-tip-display").append("<h6>Each Person Leaves $" + splitTip.toFixed(2) + " in tips </h6>")
         $("#split-total-display").append("<h6>Each person pays $" + calculatedSplit.toFixed(2) + " total </h6>");
     }
-        
-});
-
-   
-   
- 
+})
