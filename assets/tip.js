@@ -1,10 +1,12 @@
 //global variables go here
-let billInput = 0;
-let tipInput = 0;
-let splitInput = 0;
+let billInput;
+let tipInput;
+let splitInput;
 let calculatedTip;
 let calculatedTotal;
 let calculatedSplit;
+
+
 
 
 
@@ -12,18 +14,18 @@ let calculatedSplit;
 $("#submit").on("click" ,function(){
     event.preventDefault();
     let billInput = $("#bill-input").val().trim();
-    let tipInput = $("#tip-input").val().trim();
+    let tipInput = $("#tip-input").val().trim()/100; //divided by 100 to turn tip input into percentage
     let splitInput = $("#split-input").val().trim();
     console.log(billInput);
     console.log(tipInput);
     console.log(splitInput);
+    calculate();
+    
 });
 
-
 //function to calculate tip
-    //take the total bill amount
-    //take the desired tip amount and convert this to a decimal (move decimal point two spaces to the left)
-    //multiply the total bill by the tip amount
+function calculate(){ 
+   //multiply the total bill by the tip amount
     //the total is the tip amount, store this in a variable
     //append the tip amount to the corresponding div
     //take the total bill amount and add the tip amount
@@ -33,3 +35,5 @@ $("#submit").on("click" ,function(){
         //divide the total amount by the split number
         //this is the amount per person
         //append this per person amount to the corresponding div
+}
+calculate();
