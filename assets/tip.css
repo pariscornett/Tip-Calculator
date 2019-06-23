@@ -1,2 +1,38 @@
+body{
+    background-image: url("../assets/images/clean.jpg");
+}
 
+#tippy{
+    text-align:center;
+    color: #CC0000;
+    font-family: 'Poiret One', cursive;
+    font-size: 80px;
+    letter-spacing: 5px;
+}
 
+.main-body {
+    background-color:#F7DC6F;
+    opacity: 0.7;
+    height: 500px;
+}
+
+form {
+    position: relative;
+    top: 150px;
+}
+
+::placeholder{
+    color:#CC0000;
+    font-family: 'Poiret One', cursive;
+}
+
+#submit{
+    background-color:#CC0000;
+}
+
+.display {
+    text-align:center;
+    color: #ffffff;
+    position: relative;
+    top: 150px;
+}
