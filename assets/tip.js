@@ -1,6 +1,24 @@
 //global variables go here
+let billInput = 0;
+let tipInput = 0;
+let splitInput = 0;
+let calculatedTip;
+let calculatedTotal;
+let calculatedSplit;
+
+
 
 //get input from form and store data in corresponding variables
+$("#submit").on("click" ,function(){
+    event.preventDefault();
+    let billInput = $("#bill-input").val().trim();
+    let tipInput = $("#tip-input").val().trim();
+    let splitInput = $("#split-input").val().trim();
+    console.log(billInput);
+    console.log(tipInput);
+    console.log(splitInput);
+});
+
 
 //function to calculate tip
     //take the total bill amount
