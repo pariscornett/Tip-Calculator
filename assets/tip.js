@@ -18,13 +18,13 @@ $("#submit").on("click" ,function(){
     let splitInput = parseFloat($("#split-input").val().trim());
     //handle invalid entries
     //conditional for if any of the entries are 0
-    if (billInput === 0){
+    if (billInput <= 0){
         console.log("bill input invalid");
         return;
-    }if (tipInput === 0){
+    }if (tipInput <= 0){
         console.log("tip input invalid");
         return;
-    }if (splitInput === 0){
+    }if (splitInput <= 0){
         console.log("split input invalid");
         return;
     }
