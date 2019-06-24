@@ -10,18 +10,25 @@ let splitTip;
 //get input from form and store data in corresponding variables
 $("#submit").on("click" ,function(){
     event.preventDefault();
-    //handle invalid entries
-    //conditional for if any of the entries are 0
-        //then exit the loop and pop up a message
-    //if any of the entries contain a - symbol,
-        //then exit the loop and pop up a message
-    //empty display divs each click
     $("#tip-display").empty();
     $("#total-display").empty();
     $("#split-display").empty();
     let billInput = parseFloat($("#bill-input").val().trim());
     let tipInput = parseFloat($("#tip-input").val().trim()/100); //divided by 100 to turn tip input into percentage
     let splitInput = parseFloat($("#split-input").val().trim());
+    //handle invalid entries
+    //conditional for if any of the entries are 0
+    if (billInput === 0){
+        console.log("bill input invalid");
+    }if (tipInput === 0){
+        console.log("tip input invalid");
+    }if (splitInput === 0){
+        console.log("split input invalid");
+    }
+        //then exit the loop and pop up a message
+    //if any of the entries contain a - symbol,
+        //then exit the loop and pop up a message
+    //empty display divs each click
     $("#bill-input").val("");
     $("#tip-input").val("");
     $("#split-input").val("");
