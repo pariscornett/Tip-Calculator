@@ -20,10 +20,13 @@ $("#submit").on("click" ,function(){
     //conditional for if any of the entries are 0
     if (billInput === 0){
         console.log("bill input invalid");
+        return;
     }if (tipInput === 0){
         console.log("tip input invalid");
+        return;
     }if (splitInput === 0){
         console.log("split input invalid");
+        return;
     }
         //then exit the loop and pop up a message
     //if any of the entries contain a - symbol,
