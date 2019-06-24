@@ -25,21 +25,24 @@
     <div class = "row">
         <form class = "col l6  center-align">
             <input id = "bill-input" class = "center-align" placeholder = "How much was your bill?">
-                <!--The Bill Amount Before Tax Will Be Input Here-->
+            <!--The Bill Amount Before Tax Will Be Input Here-->
+            <span id = "bill"></span>
             </input>
             <br>
             <input id = "tip-input" class = "center-align" placeholder = "What &#37; would you like to tip?">
             <!--The Desired Tip Amount Will Be Input Here-->
+            <span id = "tip"></span>
             </input> <br>
             <input id = "split-input" class = "center-align" placeholder = "Split how many ways?">
             <!--The Amount of People Paying Will Be Input Here-->
+            <span id = "split"></span>
             </input>
           
             <!--Submit button here
             <button data-target="modal1" class="btn modal-trigger" id = "submit">Submit</button>-->
 
             <!--Submit/Modal Trigger-->
-            <a href = "#invalid" class = "btn orange modal-trigger" id = "submit">Submit</a>
+            <a href = "#invalid" class = "btn #C57A90 modal-trigger" id = "submit">Submit</a>
             <div class = "modal" id = "invalid">Figures must be positive numbers greater than 0.</div>
             
         </form>
